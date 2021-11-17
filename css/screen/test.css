@@ -1,0 +1,22 @@
+.test-section {
+  background-color: #fff;
+}
+.test-section,
+.test-section .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.test-section .question {
+}
+.test-section .question h3 {
+  margin: 20px 0px 40px 0px;
+}
+
+.test-section a {
+  margin: 20px 0px 20px 0px;
+}

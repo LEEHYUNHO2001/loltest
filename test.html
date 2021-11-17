@@ -23,10 +23,28 @@
         <h1>롤 인성 테스트</h1>
     </header>
 
-    <section class="main-section">
-        <h2 class="sr-only">롤 인성 테스트 시작하기</h2>
-        <p>롤할때 당신의 인성 티어는 어디입니까??</p>
-        <a onclick="result()" href="#" class="btn btn-warning mt-4">결과보기</a>
+    <section class="test-section">
+        <h2 class="sr-only">롤 인성 테스트 문제</h2>
+
+        <article class="question">
+            <h3>어라?? 나는 분명 미드 골랐는데..</h3>
+            <p>나는 가고싶은 라인 고르래서 미드 정글을 골랐다.</p>
+            <p>그런데.. 원딜이 걸려버렸다.</p>
+            <p>흠.. 눈치싸움이라도 할까..</p>
+            <p>스카너를 선택하고 유체화 정화 들어볼까?</p>
+            <div class="btn-group mt-3" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check yes" name="q1-btnradio" id="q1-btnradio1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="q1-btnradio1">Yes</label>
+              
+                <input type="radio" class="btn-check no" name="q1-btnradio" id="q1-btnradio2" autocomplete="off">
+                <label class="btn btn-outline-danger" for="q1-btnradio2">No</label>
+              
+                <input type="radio" class="btn-check maybe" name="q1-btnradio" id="q1-btnradio3" autocomplete="off">
+                <label class="btn btn-outline-success" for="q1-btnradio3">Maybe</label>
+            </div>
+        </article>
+
+        <a onclick="result()" href="#" class="btn btn-warning">결과보기</a>
     </section>
 
     <footer class="footer">
@@ -49,5 +67,7 @@
 
         <!-- Go to www.addthis.com/dashboard to customize your tools --> 
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6194af3692410701"></script>
+
+        <script src="script.js"></script>
 </body>
 </html>

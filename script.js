@@ -30,7 +30,7 @@ function result() {
     console.log(yes_counter);
     console.log(no_counter);
     // 두 카운터를 더했을때 5가 아니면 창을 띄워서 알려주고, 페이지 이동을 중지함
-    if (yes_counter + no_counter != 5) {
+    if (yes_counter + no_counter != 1) {
         alert("선택안한 문제가 있습니다. 모든 문제에 답해주세요.");
         return;
     }
@@ -45,5 +45,5 @@ function result() {
     else if (yes_counter == 1)
         location.href="pages/result_2.html";
     else
-        location.href="pages/result_1.html";
+        location.href="pages/iron.html";
 }
