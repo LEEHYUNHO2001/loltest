@@ -25,25 +25,36 @@
 
     <section class="test-section">
         <h2 class="sr-only">롤 인성 테스트 문제</h2>
-
-        <article class="question">
-            <h3>어라?? 나는 분명 미드 골랐는데..</h3>
-            <p>나는 가고싶은 라인 고르래서 미드 정글을 골랐다.</p>
-            <p>그런데.. 원딜이 걸려버렸다.</p>
-            <p>흠.. 눈치싸움이라도 할까..</p>
-            <p>스카너를 선택하고 유체화 정화 들어볼까?</p>
-            <div class="btn-group mt-3" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check yes" name="q1-btnradio" id="q1-btnradio1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="q1-btnradio1">Yes</label>
-              
-                <input type="radio" class="btn-check no" name="q1-btnradio" id="q1-btnradio2" autocomplete="off">
-                <label class="btn btn-outline-danger" for="q1-btnradio2">No</label>
-              
-                <input type="radio" class="btn-check maybe" name="q1-btnradio" id="q1-btnradio3" autocomplete="off">
-                <label class="btn btn-outline-success" for="q1-btnradio3">Maybe</label>
-            </div>
-        </article>
-
+        <script>
+            var harr = ["어라?? 나는 분명 미드 골랐는데.."];
+            var parr1 = ["나는 가고싶은 라인을 미드 정글골랐다."];
+            var parr2 = ["그런데.. 원딜이 걸려버렸다."];
+            var parr3 = ["흠.. 눈치싸움이라도 할까.."];
+            var parr4 = ["원딜이지만 스카너를 선택하고 유체화 정화 들어볼까?"];
+            const body = document.querySelector(".test-section");
+            for(var i = 0; i < 1 ; i++){
+                const art = document.createElement("article");
+                art.className = "question";
+                art.innerHTML = `
+                <h3>${harr[i]}</h3>
+                <p>${parr1[i]}</p>
+                <p>${parr2[i]}</p>
+                <p>${parr3[i]}</p>
+                <p>${parr4[i]}</p>
+                <div class="btn-group mt-3" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check yes" name="q${i}-btnradio" id="q${i}-btnradio1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="q${i}-btnradio1">Yes</label>
+                    
+                        <input type="radio" class="btn-check no" name="q${i}-btnradio" id="q${i}-btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="q${i}-btnradio2">No</label>
+                    
+                        <input type="radio" class="btn-check maybe" name="q${i}-btnradio" id="q${i}-btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-success" for="q${i}-btnradio3">Maybe</label>
+                    </div>
+                `;
+                body.appendChild(art);  
+            }
+        </script>
         <a onclick="result()" href="#" class="btn btn-warning">결과보기</a>
     </section>
 
