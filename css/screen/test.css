@@ -1,5 +1,12 @@
+.test-header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
 .test-section {
-  background-color: #fff;
+  padding-top: 300px;
+  background-image: url("../../img/sf3.jpg");
 }
 .test-section,
 .test-section .question {
@@ -12,6 +19,9 @@
 }
 
 .test-section .question {
+  width: 50%;
+  height: 40vh;
+  background: #fff;
 }
 .test-section .question h3 {
   background-color: yellow;
@@ -20,4 +30,17 @@
 
 .test-section a {
   margin: 20px 0px 20px 0px;
+}
+
+.test-section .question:not(:last-child)::after {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  color: #888;
+  background-color: #222;
+}
+
+.btn-group {
+  margin-bottom: 50px;
 }

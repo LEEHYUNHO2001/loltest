@@ -18,21 +18,46 @@
     <title>롤 인성 테스트</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header test-header">
         <img src="img/logo.jpg" alt="롤(리그오브레전드)">
-        <h1>롤 인성 테스트</h1>
+        <h1 class="test-h1">롤 인성 테스트</h1>
     </header>
 
     <section class="test-section">
         <h2 class="sr-only">롤 인성 테스트 문제</h2>
         <script>
-            var harr = ["어라?? 나는 분명 미드 골랐는데.."];
-            var parr1 = ["나는 가고싶은 라인을 미드 정글골랐다."];
-            var parr2 = ["그런데.. 원딜이 걸려버렸다."];
-            var parr3 = ["흠.. 눈치싸움이라도 할까.."];
-            var parr4 = ["원딜이지만 스카너를 선택하고 유체화 정화 들어볼까?"];
+            const qjson = {
+                            "harr" : [
+                                "어라?? 나는 분명 미드 골랐는데..",
+                                "나는야 정글의 왕 사자다!!",
+                                "오리아나로 캐리 가자~",
+                        ],
+                            "parr1" : ["나는 가고싶은 라인을 미드 정글골랐다.",
+                                "이번 판 캐리는 내가 할거다. 딜러 정글러를 골랐으니까!",
+                                "16킬 2데스.. 나는 라인전은 정말 잘하는것 같다.",
+
+                        ],
+                            "parr2" : ["그런데.. 원딜이 걸려버렸다.",
+                                        "이제 정글몹을 먹어볼.. 어..어?? 베인아 왜 니가먹어!!",
+                                        "우리팀 탑은 라인전 졌지만 그래도 할만해",
+                        ],
+                            "parr3" : ["흠.. 눈치싸움이라도 할까..",
+                                        "뭐..? 못하면 양보하라고..?",
+                                        "음? 블루달라니까 왜 우리 정글이먹지. ",
+                        ],
+                            "parr4" : ["원딜이지만 스카너를 선택하고 유체화 정화 들어볼까?",
+                                        "하기 싫네. 바텀 달릴까?",
+                                        "왜 먹냐고 한 마디 할까?",
+                        ]
+                        }
+
+            var harr = qjson.harr;
+            var parr1 = qjson.parr1;
+            var parr2 = qjson.parr2;
+            var parr3 = qjson.parr3;
+            var parr4 = qjson.parr4;
             const body = document.querySelector(".test-section");
-            for(var i = 0; i < 1 ; i++){
+            for(var i = 0; i < 3 ; i++){
                 const art = document.createElement("article");
                 art.className = "question";
                 art.innerHTML = `
