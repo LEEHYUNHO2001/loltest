@@ -38,3 +38,29 @@
 .main-section .start {
   width: 100px;
 }
+
+@media screen and (max-width: 1000px) {
+  .main-section::after {
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../img/sf.jpg");
+  }
+  .main-section::before {
+    background-image: none;
+  }
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 640px) {
+  .main-section p {
+    margin: 0px 50px;
+  }
+  .main-section::after {
+    width: 100%;
+    margin: 0px auto;
+    background-size: 100% 100%;
+    background-image: url("../../img/sf.jpg");
+  }
+  .main-section::before {
+    background-image: none;
+  }
+}

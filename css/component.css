@@ -58,5 +58,6 @@ footer .addthis_inline_share_toolbox {
 footer .kakao-adfit {
   position: absolute;
   width: 100%;
+  height: 70px;
   bottom: 0;
 }

@@ -11,11 +11,12 @@ function result() {
             yes_counter++;
         }
     }
-    // Maybe 고른 유저도 사실은 yes 다. 같이 count 하자.
+    
+    var maybe_counter = 0;
     elements = document.getElementsByClassName("maybe");
     for (var i=0; i<elements.length; i++) {
         if (elements[i].checked) {
-            yes_counter++;
+            maybe_counter++;
         }
     }
     // 대답안한 문항이 있는지 확인하기
@@ -27,23 +28,24 @@ function result() {
             no_counter++;
         }
     }
-    console.log(yes_counter);
-    console.log(no_counter);
-    // 두 카운터를 더했을때 5가 아니면 창을 띄워서 알려주고, 페이지 이동을 중지함
-    if (yes_counter + no_counter != 1) {
+
+    if (yes_counter + no_counter + maybe_counter !=5) {
         alert("선택안한 문제가 있습니다. 모든 문제에 답해주세요.");
         return;
     }
 
-    // Counter에 따라 다른 결과 페이지로 이동하기
-    if (yes_counter == 5)
-        location.href="pages/result_5.html";
-    else if (yes_counter == 4)
-        location.href="pages/result_4.html";
-    else if (yes_counter >= 2)
-        location.href="pages/result_3.html";
-    else if (yes_counter == 1)
-        location.href="pages/result_2.html";
+    var sum = yes_counter + Math.floor(maybe_counter / 2.0);
+
+    if (sum == 5)
+        location.href="result/trash.html";
+    else if (sum == 4)
+        location.href="result/stone.html";
+    else if (sum == 3)
+        location.href="result/iron.html";
+    else if (sum == 2)
+        location.href="result/bronze.html";
+    else if (sum == 1)
+        location.href="result/silver.html";
     else
-        location.href="pages/iron.html";
+        location.href="result/gold.html";
 }

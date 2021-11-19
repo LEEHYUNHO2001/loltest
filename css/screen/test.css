@@ -20,27 +20,37 @@
 
 .test-section .question {
   width: 50%;
-  height: 40vh;
   background: #fff;
+  margin-top: 30px;
 }
 .test-section .question h3 {
   background-color: yellow;
-  margin: 20px 0px 40px 0px;
+  margin: 50px 0px 40px 0px;
 }
 
 .test-section a {
   margin: 20px 0px 20px 0px;
 }
 
-.test-section .question:not(:last-child)::after {
-  display: block;
-  content: "";
+.test-section .question p {
   width: 50%;
-  height: 1px;
-  color: #888;
-  background-color: #222;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.question {
+  border-bottom: 1px solid #888;
 }
 
 .btn-group {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .test-section .question {
+    width: 70%;
+  }
+  .test-section .question h3 {
+    margin: 20px 50px 40px;
+  }
 }
