@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-device-width: 300px) and (max-device-width: 640px) {
+@media screen and (min-width: 300px) and (max-width: 640px) {
   .main-section p {
     margin: 0px 50px;
   }

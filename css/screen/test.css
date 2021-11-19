@@ -38,12 +38,25 @@
   font-weight: 600;
 }
 
+.test-section .question > p {
+  margin-bottom: 30px;
+}
+
 .question {
   border-bottom: 1px solid #888;
 }
 
 .btn-group {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .test-section .question {
+    width: 60%;
+  }
+  .test-section .question p {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 900px) {
