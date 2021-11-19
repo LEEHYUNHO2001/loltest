@@ -49,8 +49,8 @@ footer {
   background-color: #07121a;
 }
 footer p {
-  color: #666;
-  margin-bottom: 30px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 footer .addthis_inline_share_toolbox {
   margin-bottom: 4rem;
@@ -60,4 +60,28 @@ footer .kakao-adfit {
   width: 100%;
   height: 70px;
   bottom: 0;
+}
+
+footer p::after {
+  display: block;
+  content: "일러스트 출처 ㅣ 리그오브레전드";
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-header img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+  footer {
+    flex-direction: row;
+    line-height: 50px;
+    justify-content: space-around;
+  }
+  footer p {
+    margin-bottom: 70px;
+  }
 }
