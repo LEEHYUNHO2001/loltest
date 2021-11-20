@@ -1,11 +1,5 @@
-.footer-select {
-  height: 20vh;
-}
-
 .section-select {
   position: relative;
-  height: 70vh;
-  width: 100%;
 }
 
 .section-select::after {
