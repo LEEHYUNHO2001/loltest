@@ -107,7 +107,17 @@
   }
   .section-select .select-list-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.8fr);
+  }
+  .select-item .container img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .section-select .select-list-items .select-item-card {
+    height: 30vh;
+  }
+  .select-item-card .select-item button {
+    margin-bottom: 0px;
   }
   .section-select .select-list-items .select-item-card:last-child {
     margin-bottom: 150px;
