@@ -19,7 +19,7 @@
 .main-section::before {
   left: 0;
   width: 100%;
-  background-image: url("../../img/sf2.jpg");
+  background: url("../../img/sf2.jpg") center center/cover no-repeat;
 }
 
 .main-section p {
@@ -35,12 +35,6 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1000px) {
-  .main-section::before {
-    background-image: url("../../img/sf.jpg");
-  }
-}
-
 @media screen and (min-width: 300px) and (max-width: 640px) {
   .main-section p {
     margin: 80px 50px;
@@ -49,6 +43,6 @@
     width: 100%;
     margin: 0px auto;
     background-size: 100% 100%;
-    background-image: url("../../img/sf.jpg");
+    background: url("../../img/sf.jpg") center center/cover no-repeat;
   }
 }

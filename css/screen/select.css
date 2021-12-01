@@ -17,14 +17,10 @@
 
 .section-select .select-list-items {
   display: flex;
-  flex-wrap: wrap;
-}
-.section-select .select-list-items li {
-  flex: 1;
+  width: 100%;
 }
 
 .section-select .select-list-items .select-item-card {
-  flex: 1;
   position: relative;
   width: 80%;
   height: 40vh;
@@ -57,8 +53,30 @@
   height: 100%;
   border-radius: 20px;
 }
+.select-item-card .select-item .container {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+.select-item .container img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.select-item .container p {
+  font-size: 18px;
+  font-weight: bold;
+}
 .select-item-card .select-item button {
   border: none;
+  font-size: 16px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
 }
 
 .select-list-items .select-item-card:hover .select-item {
@@ -66,4 +84,35 @@
 }
 .select-list-items .select-item-card:hover .select-item-back {
   transform: rotateY(540deg) scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .select-item-card .select-item .container {
+    line-height: 20px;
+  }
+  .select-item .container p {
+    font-size: 12px;
+  }
+  .select-item-card .select-item button {
+    font-size: 10px;
+    width: 60px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .component-section.section-select {
+    height: auto;
+  }
+  .section-select .select-list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-select .select-list-items .select-item-card:last-child {
+    margin-bottom: 150px;
+  }
+  .section-select::after {
+    background-size: 100%;
+  }
 }
