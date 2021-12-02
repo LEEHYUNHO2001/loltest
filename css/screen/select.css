@@ -108,9 +108,13 @@
   .section-select .select-list-items {
     display: grid;
     grid-template-columns: repeat(2, 0.8fr);
+    margin-left: 20px;
+  }
+  .select-item-card .select-item .container {
+    line-height: 15px;
   }
   .select-item .container img {
-    width: 30%;
+    width: 40%;
     margin-bottom: 20px;
   }
   .section-select .select-list-items .select-item-card {
