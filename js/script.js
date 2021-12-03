@@ -28,14 +28,14 @@ function result() {
         return;
     }
 
-    var sum = yes_counter + Math.floor(maybe_counter / 2.0) - 1;
+    var sum = yes_counter + Math.floor(maybe_counter / 2.0);
 
     var cell = document.getElementById("cell"); while ( cell.hasChildNodes() ) { cell.removeChild( cell.firstChild ); }
     const result_btn = document.getElementById('cell');
     const test_section = document.getElementById('cell');
     const result_art = document.createElement("article");
-    const result_img = ["../../img/lol/challenger.png", "../../img/lol/grandmaster.png", "../../img/lol/master.png", "../../img/lol/diamond.png", "../../img/lol/platinum.png", "../../img/lol/gold.png", "../../img/lol/silver.png", "../../img/lol/bronze.png", "../../img/lol/iron.png", "../../img/lol/stone.jpg", "../../img/lol/trash.jpg"];
-    const result = ['첼린저', '그랜드마스터', '마스터', '다이아', '플레티넘', '골드', '실버', '브론즈', '아이언', '스톤즈', '쓰레기'];
+    const result_img = ["../../img/lol/god.jpg", "../../img/lol/challenger.png", "../../img/lol/grandmaster.png", "../../img/lol/master.png", "../../img/lol/diamond.png", "../../img/lol/platinum.png", "../../img/lol/gold.png", "../../img/lol/silver.png", "../../img/lol/bronze.png", "../../img/lol/iron.png", "../../img/lol/stone.jpg", "../../img/lol/trash.jpg"];
+    const result = ['그저 빛', '첼린저', '그랜드마스터', '마스터', '다이아', '플레티넘', '골드', '실버', '브론즈', '아이언', '스톤즈', '쓰레기'];
 
     result_btn.addEventListener('click',  () => {
         test_section.classList.add('result_section');
