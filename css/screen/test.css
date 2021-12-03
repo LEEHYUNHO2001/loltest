@@ -5,8 +5,11 @@
 }
 
 .test-section {
-  padding-top: 300px;
+  padding-top: 200px;
   background-image: url("../../img/sf3.jpg");
+}
+.test-section .btn-result {
+  margin: 100px 0px;
 }
 .test-section,
 .test-section .question {
@@ -20,8 +23,9 @@
 
 .test-section .question {
   width: 50%;
-  background: #fff;
+  background: rgb(235, 235, 235);
   margin-top: 30px;
+  border-radius: 20px;
 }
 .test-section .question h3 {
   background-color: yellow;
