@@ -53,7 +53,6 @@ function result() {
 
     result_btn.addEventListener('click',  () => {
         test_section.classList.add('section-result');
-        // document.getElementsByClassName('test-header').classList.add('header-result');
     });
 
     result_art.className = "result_art";
@@ -61,6 +60,7 @@ function result() {
         <h3 class="h3-result">당신의 인성 티어는 <strong class="str-result"> ${result[sum]} </strong> 입니다.</h3>
         <img class="img-result" src=${result_img[sum]} />
         <p class="p-result">${result_comment[sum]}</p>
+        <a href="../select.html" class="btn btn-warning btn-regame" aria-label="다른 라인 테스트하러 가기">다른 라인 테스트하러 가기</a>
     `;
     test_section.appendChild(result_art);  
 }

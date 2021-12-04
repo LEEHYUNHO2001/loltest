@@ -1,5 +1,5 @@
 function que(){
-        const qjson = {
+        const json = {
             "harr" : [
                 "해줄까 말까~",
                 "퍼스트 블러드",
@@ -40,31 +40,5 @@ function que(){
             "'그니까 칼챔이나 시켜주지' 라는 생각이 든다.",
     ]
         }
-
-    var harr = qjson.harr;
-    var parr1 = qjson.parr1;
-    var parr2 = qjson.parr2;
-    const body = document.querySelector(".test-section");
-    for(var i = 0; i <11 ; i++){
-    const art = document.createElement("article");
-    art.className = "question";
-    art.innerHTML = `
-    <h3>${harr[i]}</h3>
-    <p>${parr1[i]}</p>
-    <p>${parr2[i]}</p>
-    <div class="btn-group mt-3" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check yes" name="q${i}-btnradio" id="q${i}-btnradio1" autocomplete="off">
-        <label class="btn btn-outline-primary" for="q${i}-btnradio1">Yes</label>
-
-        <input type="radio" class="btn-check no" name="q${i}-btnradio" id="q${i}-btnradio2" autocomplete="off">
-        <label class="btn btn-outline-danger" for="q${i}-btnradio2">No</label>
-
-        <input type="radio" class="btn-check maybe" name="q${i}-btnradio" id="q${i}-btnradio3" autocomplete="off">
-        <label class="btn btn-outline-success" for="q${i}-btnradio3">Maybe</label>
-    </div>
-    `;
-    body.appendChild(art);  
-    }
+    return json;
 }
-
-que()

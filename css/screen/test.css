@@ -8,6 +8,13 @@
   padding-top: 200px;
   background-image: url("../../img/sf3.jpg");
 }
+.test-section .h2-test {
+  font-weight: bold;
+  color: #fff;
+  background-color: grey;
+  padding: 20px 40px;
+  border-radius: 50px;
+}
 .test-section .btn-result {
   margin: 100px 0px;
 }
@@ -64,6 +71,11 @@
 }
 
 @media screen and (max-width: 900px) {
+  .test-section .h2-test {
+    font-size: 22px;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
   .test-section .question {
     width: 70%;
   }
